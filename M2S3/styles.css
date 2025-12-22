@@ -1,0 +1,581 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Bebas Neue", sans-serif;
+  background: #05fc58;
+  background: linear-gradient(
+    360deg,
+    rgba(5, 252, 88, 1) 0%,
+    rgba(2, 48, 51, 0.884) 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* Make images responsive by default */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* NAV & HEADER */
+.header {
+  width: 100vw;
+}
+.navbar {
+  /* position: absolute; */
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;;
+}
+.navbar a {
+  color: rgb(255, 255, 255);
+  font-size: 1.125rem;
+}
+.navbar .logo {
+  max-width: 200px;
+  height: auto;
+}
+.navbar .nav-links ul {
+  display: flex;
+}
+.navbar .nav-links ul li {
+  margin: 0 25px;
+  
+}
+.a-nav:hover{
+  color: #01ff4133;
+  text-decoration: underline;
+}
+.active a{
+  color: rgba(187, 231, 197, 0.76);
+  font-weight: 600;
+}
+.active a:hover{
+  color: #01ff4133;
+  text-decoration: underline
+}
+.navbar .burguer-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  width: 35px;
+}
+.logo {
+  width: 200px;
+  height: 150px;
+  transition: transform 1s ease-in-out;
+}
+.logo:hover{
+  transform: rotate(360deg);
+}
+.header-section{
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+  margin-bottom: 6rem;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.div-section1{
+  margin-top: 0;
+  width: min(700px, 45vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.h1-header{
+  font-size: clamp(1.5rem, 4vw, 3.5rem);
+  color: rgba(247, 240, 231, 0.938);
+  font-style: italic;
+  transition: transform 0.3s ease; 
+  cursor: pointer;
+  line-height: 1.1;
+}
+.estilo-h1{
+  color: rgba(206, 241, 206, 0.493);
+}
+.h1-header:hover{
+  transform: scale(1.1);
+}
+
+/* MAIN SECTION*/
+
+.aboutme{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.26);
+  height: auto;
+  padding: 100px 0px;
+  width: 90%;
+  margin: 0 100px;
+  margin-bottom: 70px;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.5);
+  flex-wrap: wrap;
+}
+.div-about1{
+  width: 50%;
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.image-about{
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 45px;
+  box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.5);
+}
+.div-interno{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  gap: 40px;
+}
+.h3-about{
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  color: #f0eaeab9;
+  margin: 0;
+}
+.p-about{
+  font-size: clamp(0.95rem, 1.6vw, 1.125rem);
+  color: rgba(240, 248, 255, 0.751);
+  margin: 0;
+}
+.pets-link{
+  color: #4ec47f;
+  background-color: azure;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  border: 0.3rem double #98c7d1;
+  cursor: url(./assets/img/huella.png), pointer;
+}
+.div-proj{
+  width: 40%;
+  max-width: 600px;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ul-project{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.li-project:hover{
+  transform: scale(1.1)
+}
+.a-project{
+  color: #4b4a4acb;
+  font-size: clamp(1.5rem,3rem,4rem);
+  background-color: #f2f7f442;
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  border-radius: 10px;
+}
+.a-project:hover{
+  color: rgb(5, 253, 191);
+  background-color: darkslategray;
+}
+.img-proj{
+  max-width: 90%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.5);
+}
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: rgba(255, 255, 255, 0.26);
+  height: auto;
+  padding: 100px 0px;
+  width: 90%;
+  margin: 0 100px;
+  margin-bottom: 70px;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  box-shadow: 5px 5px 8px 3px rgba(0, 0, 0, 0.5);
+  flex-wrap: wrap;
+}
+.div-contact{
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.596);
+  border-radius: 1.25rem;
+  padding: 1rem;
+}
+.form-contact{
+  width: 45%;
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.input::placeholder{
+  color: #4ec47f;
+  font-family: "Bebas Neue", sans-serif;
+  font-size:  1rem;
+  text-align: center;
+}
+.input{
+  padding: 0.9rem;
+  border-radius: 1.5rem;
+  border: none;
+  background-color: darkslategray;
+}
+.button-form{
+  color: darkslategray;
+  font-family: "Bebas Neue", sans-serif;
+  font-size:  1rem;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  border-radius:2rem;
+  border: none;
+  background-color: #4ec47f;
+}
+.button-form:hover{
+  transform: scale(1.05);
+}
+
+/* FOOTER*/
+
+.footer-index{
+  background-color: darkslategray;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.ul-footer{
+  display: flex;
+  gap: 30px;
+}
+.div-footer{
+  font-size: clamp(1rem,1.5rem,3rem);
+  color: aliceblue;
+}
+
+
+/* PETS*/
+div.div-dos {
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+.seccion-uno{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+
+article {
+    display: flow-root;
+    background-color: #fbfdfb7e;
+    padding: 15px;
+    border: 2px solid #09aa31;
+    border-radius: 15px;
+    margin: 40px auto;
+    margin-top: 50px;
+    text-align: center;
+    max-width: 400px;
+}
+
+article img {
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+  width: 180px;
+  max-width: 45vw;
+  aspect-ratio: 1/1;
+  margin: 0 auto 10px;
+  display: block;
+}
+article:hover{
+  transform: scale(1.5);
+}
+.footer-pets{
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 865px) {
+  .navbar {
+    padding: 0px;
+  }
+  .navbar .logo {
+    position: absolute;
+    top: 8px;
+    left: 0px;
+  }
+  .navbar .burguer-menu {
+    display: block;
+  }
+  .nav-links {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(221, 221, 221, 0.329);
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease-in-out;
+  }
+  .nav-links.mobile-menu {
+    margin-left: 0;
+  }
+  .burguer-menu {
+    z-index: 2;
+  }
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar .nav-links ul li {
+    margin: 25px 0;
+    font-size: 1.2em;
+  }
+  /* Adjust paddings and text for tablet */
+  .aboutme, .contact {
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    padding: 3rem 1rem;
+  }
+  .div-about1{ width: 100%; height: auto; }
+  .div-proj{ width: 100%; }
+  .div-interno{ width: 90%; }
+}
+
+/* Tablet and small laptop */
+@media screen and (max-width: 768px) {
+  .header-section{ flex-direction: column; margin-top: 4rem; }
+  .logo{ max-width: 160px; }
+  .h1-header{ font-size: clamp(1.25rem, 5vw, 2.25rem); }
+  .h3-about{ font-size: 1.25rem; }
+  .div-about1{ height: auto; }
+  .image-about{ border-radius: 1rem; }
+  .div-contact{ flex-direction: column; gap: 1rem; }
+  .form-contact{ width: 90%; }
+}
+
+/* Mobile narrow (iPhone 8/SE and similar) */
+@media screen and (max-width: 375px) {
+  .navbar{ padding: 0.5rem 1rem; }
+  .navbar .logo{ position: relative; left: 0; top: 0; max-width: 140px; }
+  .header-section{ margin-top: 2.5rem; }
+  .header-section .div-section1{ width: 100%; }
+  .header-section{ flex-direction: column; align-items: center; }
+  .h1-header{ font-size: clamp(1rem, 6vw, 1.6rem); text-align: center; }
+  .aboutme, .projects, .contact{ margin: 0.5rem; padding: 1.25rem; margin-bottom: 2.25rem; }
+  .p-about{ font-size: 0.95rem; }
+  .div-interno{ width: 100%; }
+  .div-proj{ width: 100%; }
+  article{ max-width: 320px; margin: 1rem auto; }
+  article img{ width: 140px; }
+  /* Ensure About -> Pets button doesn't overlap text */
+  .div-interno p { margin-bottom: 0.75rem; }
+  .pets-link { display: inline-block; margin-top: 1rem; margin-bottom: 1rem; }
+  /* Projects: image then list with spacing */
+  .projects { display: flex; flex-direction: column; gap: 1rem; }
+  .projects .div-proj { width: 100%; }
+  .img-proj { margin-bottom: 0.75rem; max-height: 35vh; object-fit: cover; }
+  .ul-project { gap: 0.85rem; padding: 0.25rem 0; }
+  .a-project { display: block; width: 90%; margin: 0.4rem auto; padding: 0.6rem; border-radius: 0.5rem; }
+  .li-project { margin: 0; }
+  .ul-footer{ flex-direction: column; gap: 0.5rem; align-items: center; }
+  /* Footer spacing */
+  .footer-index { margin-top: 2rem; padding-bottom: 2rem; }
+}
+
+/* Restore desktop (original) styles for large screens so desktop stays unchanged */
+@media screen and (min-width: 866px) {
+  .navbar a { font-size: xx-large; }
+  .navbar .logo { font-size: 2em; max-width: none; width: 200px; height: 150px; }
+  .header-section { margin-top: 200px; margin-bottom: 200px; gap: 0; padding: 0; }
+  .div-section1 { margin-top: -200px; height: 60vh; width: 40vw; }
+  .h1-header { font-size: 4rem; }
+  .h3-about { font-size: 4rem; }
+  .p-about { font-size: 1.5rem; }
+  .div-about1 { width: 50%; height: 600px; }
+  .div-proj { width: 40%; height: 500px; }
+  .img-proj { height: 80%; border-radius: 45px; }
+  .div-contact { width: 70%; height: 400px; }
+  .form-contact { width: 35%; }
+  .article img { width: 200px; }
+  /* Desktop: ensure About spacing so Pets link doesn't overlap text */
+  .div-interno { gap: 1.25rem; }
+  .p-about { margin-bottom: 1rem; }
+  .div-interno p { margin-bottom: 1rem; }
+  .pets-link { display: inline-block; margin-top: 1rem; margin-bottom: 0; position: relative; z-index: 1; }
+}
+
+/* Tablet adjustments: increase spacing between sections */
+@media screen and (max-width: 768px) {
+  .aboutme, .contact { margin: 0 1.5rem 2rem 1.5rem; padding: 3.5rem 1.25rem; }
+  .div-about1 { width: 100%; height: auto; padding-bottom: 1rem; }
+  .pets-link { margin-top: 1rem; }
+  .ul-project { gap: 1.25rem; }
+  .a-project{ font-size: 1.25rem; padding: 0.75rem 1rem; }
+  /* projects: show image first on mobile/tablet */
+  .projects { flex-direction: column; }
+  .projects .div-proj:first-child { order: 2; }
+  .projects .div-proj:last-child { order: 1; }
+}
+
+/* Mobile narrow: add vertical spacing, center pet articles, stack footer */
+@media screen and (max-width: 375px) {
+  .aboutme, .contact { margin: 0.75rem; padding: 1.5rem; }
+  .pets-link { margin-top: 1rem; }
+  .div-interno { gap: 1rem; }
+  .ul-project { gap: 1rem; }
+  .a-project { font-size: 1rem; padding: 0.6rem; }
+  .footer-index { flex-direction: column; align-items: center; padding: 1rem; }
+  .footer-index img.logo { max-width: 140px; }
+  div.div-dos .seccion-uno { justify-content: center; }
+  .seccion-uno article { margin: 1rem auto; flex: 0 1 320px; }
+  .seccion-uno { gap: 1rem; }
+}
+
+/* Intermediate sizes: bigger than mobile (>=376px) up to tablet (<=1000px)
+   Keep mobile rules untouched; improve About spacing, Pets button and Projects layout */
+@media screen and (min-width: 376px) and (max-width: 1000px) {
+  .aboutme, .projects, .contact {
+    margin: 0.75rem 1rem 2.5rem 1rem;
+    padding: 2rem 1rem;
+  }
+  .div-about1 { width: 100%; height: auto; padding-bottom: 1rem; }
+  /* Ensure Pets button doesn't overlap paragraphs */
+  .div-interno p { margin-bottom: 1rem; }
+  .pets-link { display: inline-block; margin-top: 1.25rem; margin-bottom: 1rem; }
+
+  /* Projects: image first, then list, with spacing and readable items */
+  .projects { display: flex; flex-direction: column; gap: 1.5rem; }
+  .projects .div-proj:first-child { order: 2; }
+  .projects .div-proj:last-child { order: 1; }
+  .img-proj { max-width: 100%; max-height: 40vh; margin-bottom: 1rem; }
+  .ul-project { gap: 1rem; padding: 0.5rem 0; }
+  .li-project { margin: 0; }
+  .a-project {
+    display: block;
+    width: 92%;
+    margin: 0.45rem auto;
+    padding: 0.65rem 0.8rem;
+    font-size: 1rem;
+    border-radius: 0.6rem;
+  }
+
+  /* Prevent list items from crowding below ~1000px */
+  .ul-project li + li { margin-top: 0.6rem; }
+
+  /* Slightly larger footer spacing */
+  .footer-index { padding: 1.25rem 1rem; gap: 0.75rem; }
+
+  /* Ensure logos scale smoothly */
+  .navbar .logo, .footer-index img.logo { max-width: 160px; height: auto; }
+}
+
+/* Hamburger checkbox + label styles and animation */
+#burger {
+  display: none;
+}
+
+#burger + label.burguer-menu {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  height: 20px;
+  width: 35px;
+  z-index: 5;
+  display: none;
+}
+
+#burger + label.burguer-menu span {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: 50%;
+  margin-top: -1px;
+  left: 0;
+  display: block;
+  background: #05fc58;
+  background: linear-gradient(
+    359deg,
+    rgba(5, 252, 88, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  transition: 0.5s;
+}
+
+#burger + label.burguer-menu span:first-child {
+  top: 3px;
+}
+
+#burger + label.burguer-menu span:last-child {
+  top: 16px;
+}
+
+#burger + label.burguer-menu:hover {
+  cursor: pointer;
+}
+
+#burger:checked + label.burguer-menu span {
+  opacity: 0;
+  top: 50%;
+}
+
+#burger:checked + label.burguer-menu span:first-child {
+  opacity: 1;
+  transform: rotate(405deg);
+}
+
+#burger:checked + label.burguer-menu span:last-child {
+  opacity: 1;
+  transform: rotate(-405deg);
+}
+
+/* Ensure the label becomes visible under the same media query as before */
+@media screen and (max-width: 865px) {
+  #burger + label.burguer-menu {
+    display: block;
+  }
+}

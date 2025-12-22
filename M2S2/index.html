@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/logo-nav.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <img class="logo" src="./assets/img/logo-nav.png" alt="logo">
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a class="a-nav" href="#Home">Home</a></li>
+                <li><a class="a-nav" href="#About">About Me</a></li>
+                <li><a class="a-nav" href="#Projects">Projects</a></li>
+                <li><a class="a-nav" href="#Contact">Contact Me</a></li>
+            </ul>
+        </div>
+        <input id="burger" type="checkbox" />
+        <label for="burger" class="burguer-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </nav>
+    <header id="Home" class="header-section">
+        <div class="div-section1">
+            <img  src="./assets/img/logo-Photoroom.png" alt="dv-logo">
+        </div>
+        <div class="div-section1">
+            <h1 class="h1-header">Bienvenido a mi Portafolio web, <span class="estilo-h1">mi nombre es Brayan
+                    Quintero.</span><br>aqui encontraras mas informacion <span class="estilo-h1">acerca
+                    de mis proyectos</span> <br><a class="estilo-h1" href="#About">⬇</a></h1>
+        </div>
+    </header>
+    <main>
+        <section id="About" class="aboutme">
+        <div class="div-about1">
+            <img class="image-about" src="./assets/img/descarga.jpeg" alt="medellin">
+        </div>
+        <div class="div-about1">
+            <div class="div-interno">
+                <h3 class="h3-about">About me</h3>
+            <p class="p-about">Hola, mi nombre es Bryan, tengo 28 años soy un joven de la ciudad de medellin, actualmente me dedico a
+                estudiar desarrollo de software en el itm tambien hago parte de Riwi
+                soy un coder de la corte 6 y este es mi primer proyecto usando HTML y CSS.
+            </p>
+            <p class="p-about">En el sigueinte enlace tambien podras conocer a mis mascotas. <br><a class="pets-link" href="./pets.html">Pets</a></p>
+            </div>
+        </div>
+    </section>
+    <section id="Projects" class="aboutme projects">
+        <div class="div-proj">
+            <ul class="ul-project">
+                <li class="li-project"><a class="a-project">Gestion de Libros (Crud)</a></li>
+                <li class="li-project"><a class="a-project">App Clima (API)</a></li>
+                <li class="li-project"><a class="a-project">Figma Grid</a></li>
+                <li class="li-project"><a class="a-project">Frigma Flex</a></li>
+                <li class="li-project"><a class="a-project">Ejercicios Python</a></li>
+            </ul>
+        </div>
+        <div class="div-proj">
+            <h3 class="h3-about">Projects</h3>
+            <img class="img-proj" src="./assets/img/chip.jpg" alt="chip">
+        </div>
+    </section>
+    <section id="Contact" class="contact">
+        <h3 class="h3-about">Contact me</h3>
+        <div class="div-contact">
+            <div class="form-contact form">
+                <input class="input" placeholder="NAME" type="text">
+                <input class="input" placeholder="EMAIL" type="email">
+                <textarea class="input text-area" placeholder="Tell me about the project" id=""></textarea>
+                <button class="button-form" type="submit">Sent</button>
+            </div>
+            <div class="form-contact">
+                <img src="./assets/img/New message-bro.svg" alt="ilustartion">
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer class="footer-index">
+        <div>
+            <img class="logo" src="./assets/img/logo-nav.png" alt="logo">
+        </div>
+        <div class="div-footer">
+            <p>&COPY; Bryan 2025</p>
+        </div>
+        <div class="div-footer">
+            <nav>
+                <ul class="ul-footer">
+                    <li><a class="div-footer" href="#Home">Home</a></li>
+                    <li><a class="div-footer" href="#About">About Me</a></li>
+                    <li><a class="div-footer" href="#Projects">Projects</a></li>
+                    <li><a class="div-footer" href="#Contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
